@@ -16,6 +16,15 @@ const LeftMenu = () => {
             >
                 Simple Linear Loader
             </p>
+            <p className={styles.title}>
+                Playing around with animations properties
+            </p>
+            <p
+                className={styles.link}
+                onClick={() => router.push('/animation-timing-function')}
+            >
+                animation-timing-function
+            </p>
         </div>
     );
 };

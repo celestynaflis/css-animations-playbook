@@ -8,12 +8,6 @@
     height: calc(100vh - 150px);
 }
 
-.title {
-    color: #474747;
-    font-size: 30px;
-    font-weight: lighter;
-}
-
 .element {
     width: 50px;
     height: 50px;
@@ -22,7 +16,7 @@
     background-color: transparent;
     margin: 50px;
     position: relative;
-    animation: roundingSquare 3s forwards infinite;
+    animation: roundingSquare 3s backwards infinite;
 }
 
 .loader {
@@ -80,14 +74,10 @@
 }
 
 @keyframes roundingSquare {
-    0% {
+    from {
         transform: rotate(0deg);
     }
-    25% {
-        border: dotted 5px #6CA3CB;
-
-    }
-    100% {
+    to {
         transform: rotate(360deg);
     }
 }
