@@ -12,9 +12,21 @@ const LeftMenu = () => {
             </p>
             <p
                 className={styles.link}
-                onClick={() => router.push('/loaderPage')}
+                onClick={() => router.push('/loader-page')}
             >
                 Simple Linear Loader
+            </p>
+            <p
+                className={styles.link}
+                onClick={() => router.push('/bouncing-dots-page')}
+            >
+                Bouncing Dots
+            </p>
+            <p
+                className={styles.link}
+                onClick={() => router.push('/square-circle')}
+            >
+                Circle in Square
             </p>
             <p className={styles.title}>
                 Playing around with animations properties
@@ -24,6 +36,18 @@ const LeftMenu = () => {
                 onClick={() => router.push('/animation-timing-function')}
             >
                 animation-timing-function
+            </p>
+            <p
+                className={styles.link}
+                onClick={() => router.push('/animation-direction')}
+            >
+                animation-direction
+            </p>
+            <p
+                className={styles.link}
+                onClick={() => router.push('/animation-fill-mode')}
+            >
+                animation-fill-mode
             </p>
         </div>
     );

@@ -1,0 +1,61 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 280px;
+    width: 100%;
+    height: calc(100vh - 150px);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.letter {
+    font-size: 65px;
+    padding: 0 5px;
+    font-weight: bold;
+    color: #6CA3CB;
+    animation-duration: 3s;
+    animation-timing-function: steps(5, end);
+    animation-iteration-count: infinite;
+    animation-name: colors;
+}
+
+.e {
+    animation-delay: 0.5s;
+}
+
+.l {
+    animation-delay: 1s;
+}
+
+.l2 {
+    animation-delay: 1.5s;
+}
+
+.o {
+    animation-delay: 2s;
+}
+
+@keyframes colors {
+    0%{
+        color: #BCE2E2;
+    }
+    25% {
+        color: #75BBCA;
+    }
+    50% {
+        color: #85DAD5;
+    }
+    75% {
+        color: #BCE2E2;
+    }
+    100%{
+        color: #CFF3E0;
+    }
+}

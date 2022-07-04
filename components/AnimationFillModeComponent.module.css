@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 280px;
+    width: 100%;
+    height: 100%;
+}
+
+.choosePropertyButton {
+    text-align: center;
+    padding: 10px;
+    color: #6CA3CB;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.text {
+    font-size: 25px;
+    color: #6CA3CB;
+    animation-name: biggerText;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    padding-bottom: 50px;
+}
+
+.forwards {
+    animation-fill-mode: forwards;
+}
+
+.backwards {
+    animation-fill-mode: backwards;
+}
+
+@keyframes biggerText {
+    0% {
+        font-weight: normal;
+    }
+    100% {
+        font-weight: bold;
+        font-size: 60px;
+        color: black;
+    }
+}

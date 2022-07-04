@@ -1,0 +1,59 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 280px;
+    width: 100%;
+    height: calc(100vh - 150px);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.dot {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #6CA3CB;
+    margin: 0 5px;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-name: bouncing;
+}
+
+.dot1 {
+    background-color: #6CA3CB;
+}
+
+.dot2 {
+    background-color: #75BBCA;
+    animation-delay: 0.5s;
+}
+
+.dot3 {
+    background-color: #85DAD5;
+    animation-delay: 1s;
+}
+
+.dot4 {
+    background-color: #BCE2E2;
+    animation-delay: 1.5s;
+}
+
+@keyframes bouncing {
+    0%, 20% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    80%, 100%{
+        transform: translateY(0);
+    }
+}

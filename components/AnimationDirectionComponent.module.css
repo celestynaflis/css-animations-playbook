@@ -1,0 +1,62 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 280px;
+    width: 100%;
+    height: 100%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.choosePropertyButton {
+    text-align: center;
+    padding: 10px;
+    color: #6CA3CB;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.dot {
+    width: 80px;
+    height: 80px;
+    background-color: #6CA3CB;
+    border-radius: 50%;
+    margin-left: -200px;
+    margin-bottom: 30px;
+    animation-name: moveAnimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+}
+
+.normal {
+    animation-direction: normal ;
+}
+
+.reverse {
+    animation-direction: reverse;
+}
+
+.alternate {
+    animation-direction: alternate;
+}
+
+.alternateReverse {
+    animation-direction: alternate-reverse;
+}
+
+@keyframes moveAnimation {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(200px);
+    }
+}
