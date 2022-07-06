@@ -1,0 +1,104 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 280px;
+    width: 100%;
+    height: calc(100vh - 150px);
+}
+
+.container p {
+    font-size: 20px;
+    color: #777777;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.glass {
+    position: relative;
+    width: 100px;
+    height: 150px;
+    background: #6CA3CB;
+    margin: 0 50px;
+}
+
+.glass:before {
+    content: '';
+    background: #CFF3E0;
+    position: absolute;
+    width: 100px;
+    height: 150px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    animation: filling 3s linear infinite alternate;
+}
+
+.glassHover {
+    position: relative;
+    width: 100px;
+    height: 150px;
+    background: #6CA3CB;
+    margin: 0 50px;
+}
+
+.glassHover:before {
+    content: '';
+    background: #CFF3E0;
+    position: absolute;
+    width: 100px;
+    height: 150px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: 2s;
+}
+
+.glassHover:hover:before {
+    height: 0;
+}
+
+.glassAnimationOnHover {
+    position: relative;
+    width: 100px;
+    height: 150px;
+    background: #6CA3CB;
+    margin: 0 50px;
+}
+
+.glassAnimationOnHover:before {
+    content: '';
+    background: #CFF3E0;
+    position: absolute;
+    width: 100px;
+    height: 150px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.glassAnimationOnHover:hover:before {
+    animation: filling 3s linear infinite alternate;
+}
+
+@keyframes filling {
+    0%{
+       height: 0;
+    }
+    50%{
+        height: 72px;
+    }
+    100%{
+        height: 150px;
+    }
+}
