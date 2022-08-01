@@ -40,7 +40,6 @@ const Layout = (props) => {
             <div className={styles.container}>
                 <p className={styles.text}>{props.title}</p>
             </div>
-            {/*<LeftMenu />*/}
             <div className={` ${styles.menuContainer}`}>
                 <p className={styles.title}>CSS Animations Playbook</p>
                 <p
