@@ -15,7 +15,6 @@
     color: white;
 }
 
-
 .menuContainer {
     position: fixed;
     z-index: 2;
@@ -27,11 +26,6 @@
     box-shadow: 1px 3px 5px 1px rgba(0, 0, 0, 0.2);
     overflow: auto;
 }
-
-/*.scroll {*/
-/*    overflow: scroll;*/
-/*    overflow-x: hidden;*/
-/*}*/
 
 .title {
     padding: 10px 0 10px 30px;
@@ -54,15 +48,15 @@
     color: white;
 }
 
-.container::-webkit-scrollbar {
+.menuContainer::-webkit-scrollbar {
     width: 3px;
 }
 
-.container::-webkit-scrollbar-track {
+.menuContainer::-webkit-scrollbar-track {
     background-color: #F3F3F3
 }
 
-.container::-webkit-scrollbar-thumb {
+.menuContainer::-webkit-scrollbar-thumb {
     background: #D9D9D9;
     width: 3px;
 }
