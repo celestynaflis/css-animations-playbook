@@ -6,7 +6,7 @@ export default function Home() {
     return (
         <>
             <Layout title="CSS animations examples" />
-            <Hello />
+            {/*<Hello />*/}
         </>
     );
 }
