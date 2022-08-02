@@ -49,7 +49,7 @@
 }
 
 .menuContainer::-webkit-scrollbar {
-    width: 3px;
+    width: 4px;
 }
 
 .menuContainer::-webkit-scrollbar-track {
@@ -57,6 +57,6 @@
 }
 
 .menuContainer::-webkit-scrollbar-thumb {
-    background: #D9D9D9;
-    width: 3px;
+    background: #D1D1D1;
+    width: 4px;
 }
