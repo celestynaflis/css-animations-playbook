@@ -1,4 +1,4 @@
-# CSS Animations playbook
+# ✨ CSS Animations playbook ✨
 
 ### This application was implemented for educational purposes to demonstrate the use of CSS animations and provide examples during the presentation.
 
